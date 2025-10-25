@@ -4,55 +4,43 @@
   <style>
     body {
       font-family: "Tahoma", sans-serif;
-
       background-image: url("https://raw.githubusercontent.com/sameyit/websi/refs/heads/main/marecllosgoodolwall.png");
       background-size: 50% auto;
       background-repeat: repeat;
       background-position: left top;
       animation: scrollBG 5s linear infinite;
-
       margin: 0;
       height: 100vh;
-      /*display: flex;*/
-      justify-content: center;
-      align-items: center;
       background-color: #ddd;
     }
-    .box {
-      width: 800px;
-      padding: 40px;
-      background-color: white;
-      border-radius: 0;
-      box-shadow: none;
-      margin: 40px auto;
-      background: linear-gradient(to bottom, white, #dcdcdc);
-      text-align: center;
-    }
+
     @keyframes scrollBG {
       from { background-position: 0 0; }
-      to   { background-position: 200px 200px; } /* scrolls right and down */
+      to { background-position: 200px 200px; }
     }
+
     .container {
       display: flex;
       background: linear-gradient(to bottom, white, #dcdcdc);
+      width: 1000px; /* total width */
+      margin: 40px auto; /* centers horizontally with top margin */
       border-radius: 0;
       box-shadow: none;
-      width: 1000px; /* total width */
     }
 
     .box {
-      flex: 3; /* main content takes 3/4 */
+      flex: 3;
       padding: 40px;
       text-align: center;
     }
 
     .button-box {
-      flex: 1; /* buttons take 1/4 */
+      flex: 1;
       padding: 40px;
-      border-left: 2px solid #aaa; /* vertical line */
+      border-left: 2px solid #aaa;
       display: flex;
       flex-direction: column;
-      gap: 10px; /* space between buttons */
+      gap: 10px;
       align-items: stretch;
     }
 
