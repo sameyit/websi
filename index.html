@@ -32,16 +32,61 @@
       from { background-position: 0 0; }
       to   { background-position: 200px 200px; } /* scrolls right and down */
     }
+    .container {
+      display: flex;
+      background: linear-gradient(to bottom, white, #dcdcdc);
+      border-radius: 0;
+      box-shadow: none;
+      width: 1000px; /* total width */
+    }
+
+    .box {
+      flex: 3; /* main content takes 3/4 */
+      padding: 40px;
+      text-align: center;
+    }
+
+    .button-box {
+      flex: 1; /* buttons take 1/4 */
+      padding: 40px;
+      border-left: 2px solid #aaa; /* vertical line */
+      display: flex;
+      flex-direction: column;
+      gap: 10px; /* space between buttons */
+      align-items: stretch;
+    }
+
+    .button-box a {
+      text-decoration: none;
+      padding: 10px;
+      background-color: #444;
+      color: white;
+      text-align: center;
+      border-radius: 4px;
+      transition: background 0.3s;
+    }
+
+    .button-box a:hover {
+      background-color: #666;
+    }
   </style>
 </head>
 <body>
-  <div class="box">
-    <h1>SAMEYI</h1>
-    <hr>
-    <h2>BOUT ME!!</h2>
-    <p>Hello I Am <b>Sameyi.</b>,... I Am 13 year old (turning 14)</p>
-    <p>cakll me <b>Sammi</b> or <b>sameyii</b>... whatever you l ike.,..</p>
-    <p>I make musicccccc and maybe some art im bad at art</p>
+  <div class="container">
+    <div class="box">
+      <h1>SAMEYI</h1>
+      <hr>
+      <h2>BOUT ME!!</h2>
+      <p>Hello I Am <b>Sameyi.</b>,... I Am 13 year old (turning 14)</p>
+      <p>Call me <b>Sammi</b> or <b>sameyii</b>... whatever you like.,..</p>
+      <p>I make musicccccc and maybe some art I'm bad at art</p>
+    </div>
+
+    <div class="button-box">
+      <a href="https://example.com">Button 1</a>
+      <a href="https://example.com">Button 2</a>
+      <a href="https://example.com">Button 3</a>
+    </div>
   </div>
 </body>
 </html>
