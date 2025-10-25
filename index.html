@@ -9,6 +9,7 @@
       background-size: 50% auto;
       background-repeat: repeat;
       background-position: left top;
+      animation: scrollBG 10s linear infinite;
 
       margin: 0;
       height: 100vh;
@@ -25,6 +26,10 @@
       box-shadow: none;
       margin: 40px auto;
       background: linear-gradient(to bottom, white, #dcdcdc);
+    }
+    @keyframes scrollBG {
+      from { background-position: 0 0; }
+      to   { background-position: 200px 200px; } /* scrolls right and down */
     }
   </style>
 </head>
